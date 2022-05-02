@@ -1,0 +1,41 @@
+@import "src/components/styles/variables";
+
+.form {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 22rem;
+  height: 22rem;
+  background-color: $another_background;
+  border-radius: 0.2rem;
+  box-shadow: 5px 5px 15px -5px #000000;
+
+  input {
+    height: 1.5rem;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px $page_background;
+    margin: .1rem;
+    background-color: $another_background;
+  }
+
+  label {
+    font-size: 1.2rem;
+  }
+
+  button {
+    border: none;
+    border-radius: 0.2rem;
+    height: 2rem;
+    margin-top: 1rem;
+    background-color: #ffc969;
+  }
+  .rolesRadio{
+    display: flex;
+    flex-direction: column;
+    label{
+      font-size: 1.1rem;
+    }
+  }
+}

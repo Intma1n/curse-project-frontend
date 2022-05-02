@@ -1,26 +1,23 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Header} from "./components/Header/Header";
+import {AuthPage} from "./pages/AuthPage/AuthPage";
+import {Navigate, Route, Routes} from 'react-router-dom';
+import {AllReconstructionsPage} from "./pages/AllReconstructionsPage/AllReconstructionsPage";
+import {AllUsersPage} from "./pages/AllUsersPage/AllUsersPage";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Fragment>
+            <Routes>
+                <Route path='/' element={<Navigate replace to='/auth'/>}/>
+                <Route path='/auth' element={<AuthPage/>}/>
+                <Route path='/reconstructions' element={<AllReconstructionsPage/>}/>
+                <Route path='/users' element={<AllUsersPage/>}/>
+            </Routes>
+        </Fragment>
+    );
 }
 
 export default App;

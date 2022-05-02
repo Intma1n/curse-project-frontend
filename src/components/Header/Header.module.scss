@@ -1,0 +1,28 @@
+@import 'src/components/styles/variables';
+
+.header{
+  display: flex;
+  flex-direction: row;
+  background-color: $background;
+  height: 4.5rem;
+  justify-content: right;
+  font-size: 1.5rem;
+  align-items: center;
+  a{
+    margin: 0.5rem;
+    cursor: pointer;
+    color:black;
+    text-decoration: none;
+    outline: none;
+  }
+  a:hover{
+    color:$page_background;
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+.organizerInfo{
+  display: flex;
+  flex-direction: row;
+}

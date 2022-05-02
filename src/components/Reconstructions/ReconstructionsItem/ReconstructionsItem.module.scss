@@ -1,0 +1,43 @@
+@import "src/components/styles/variables";
+
+.reconstructionItem {
+  background-color: $another_background;
+  margin: 1.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px -5px #000000;
+
+  span {
+    font-weight: bold;
+
+    p {
+      font-weight: initial;
+    }
+  ;
+  }
+
+  .registerOnReconstruction {
+    display: flex;
+    justify-content: center;
+
+    button {
+      border: none;
+      height: 2.5rem;
+      border-radius: 0.5rem;
+      margin: 0.5rem 0 1.5rem 0;
+      background-color: $page_background;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 5px 5px 15px -5px #000000;
+    }
+
+    button:hover {
+      background-color: #eab255;
+    }
+  }
+
+
+  .reconstructionInfo {
+    padding: 10px;
+  }
+}
