@@ -1,11 +1,18 @@
 import {dummyUsers} from "../../dummyData/dummyUsers";
 import {UsersItem} from "../UsersItem/UsersItem";
 import classes from "./UsersList.module.scss";
+import {UserType} from "../../config/types";
 
-export const UsersList = () => {
+export const UsersList = (props:{users:UserType[]}) => {
     return <div className={classes.usersList}>
-        {dummyUsers.map((user: (number | string)[]) => <UsersItem
-                user={user}
+        {props.users.map((user: UserType) => <UsersItem
+                key={user.id}
+                name={user.name}
+                surname={user.surname}
+                email={user.email}
+                type={user.type}
+                id={user.id}
+                password={user.password}
             />
         )}
     </div>

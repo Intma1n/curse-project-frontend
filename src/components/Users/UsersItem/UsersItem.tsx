@@ -1,12 +1,13 @@
 import classes from "./UsersItem.module.scss";
+import {UserType} from "../../config/types";
 
-export const UsersItem = (props: { user: (number | string)[] }) => {
+export const UsersItem = (props: UserType) => {
     return <div className={classes.usersItem}>
         <div className={classes.usersInfo}>
-            <span>Имя<p>{props.user[1]}</p></span>
-            <span>Фамилия<p>{props.user[3]}</p></span>
-            <span>Почта<p>{props.user[4]}</p></span>
-            <span>Роль<p>{props.user[5]}</p></span>
+            <span>Имя<p>{props.name}</p></span>
+            <span>Фамилия<p>{props.surname}</p></span>
+            <span>Почта<p>{props.email}</p></span>
+            <span>Роль<p>{props.type}</p></span>
         </div>
     </div>
 }

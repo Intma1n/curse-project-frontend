@@ -1,0 +1,22 @@
+@import 'src/components/styles/variables';
+
+.equipmentItem {
+  width: 15rem;
+  background-color: $background;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px -5px #000000;
+
+  .equipmentInfo {
+    margin: 0.5rem;
+
+    span {
+      font-weight: bold;
+
+      p {
+        font-weight: initial;
+      }
+    }
+
+  }
+}

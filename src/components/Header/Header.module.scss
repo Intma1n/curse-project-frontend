@@ -1,6 +1,6 @@
 @import 'src/components/styles/variables';
 
-.header{
+.header {
   display: flex;
   flex-direction: row;
   background-color: $background;
@@ -8,21 +8,23 @@
   justify-content: right;
   font-size: 1.5rem;
   align-items: center;
-  a{
+
+  a {
     margin: 0.5rem;
     cursor: pointer;
-    color:black;
+    color: black;
     text-decoration: none;
     outline: none;
   }
-  a:hover{
-    color:$page_background;
+
+  a:hover {
+    color: $page_background;
     text-decoration: none;
     outline: none;
   }
 }
 
-.organizerInfo{
+.organizerInfo {
   display: flex;
   flex-direction: row;
 }
