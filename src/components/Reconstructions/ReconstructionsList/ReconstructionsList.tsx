@@ -7,7 +7,6 @@ import {Header} from "../../Header/Header";
 
 export const ReconstructionsList = (props:{reconstructions: ((number|string)[])[]}) => {
     return <Fragment>
-        <Header name='name'/>
         <div className={classes.reconstructionsList}>
         {props.reconstructions.map((reconstruction: (number|string)[]) => <ReconstructionsItem
             key={reconstruction[0]}

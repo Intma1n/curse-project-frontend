@@ -7,7 +7,7 @@ export const UsersItem = (props: UserType) => {
             <span>Имя<p>{props.name}</p></span>
             <span>Фамилия<p>{props.surname}</p></span>
             <span>Почта<p>{props.email}</p></span>
-            <span>Роль<p>{props.type}</p></span>
+            <span>Роль<p>{props.type_of_user}</p></span>
         </div>
     </div>
 }

@@ -17,9 +17,10 @@ function App() {
             <Routes>
                 <Route path='/' element={<Navigate replace to='/auth'/>}/>
 
-                (<Route path='/auth' element={authCtx.isLoggedIn
+                (<Route path='/auth' element={!authCtx.isLoggedIn
                 ? <AuthPage/>
-                : <Navigate replace to='/reconstructions'/>}/>)
+                : <Navigate replace to='/reconstructions'/>}/>
+                )
 
                 <Route path='/reconstructions' element={authCtx.isLoggedIn
                     ? <AllReconstructionsPage/>

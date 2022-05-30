@@ -3,6 +3,8 @@ import {ReconstructionsList} from "../../components/Reconstructions/Reconstructi
 import useHttp from "../../components/hooks/use-http";
 import {getAllReconstructions} from "../../components/lib/api";
 import {useEffect} from "react";
+import {AddReconstructionForm} from "../../components/AddReconstructionForm/AddReconstructionForm";
+import {Header} from "../../components/Header/Header";
 
 export const AllReconstructionsPage = () => {
     const {
@@ -29,6 +31,8 @@ export const AllReconstructionsPage = () => {
         content = <p>An error occurred while loading reconstructions</p>
     }
     return <div className={classes.allReconstructions}>
+        <Header name='name'/>
+        {localStorage.getItem('username') === 'organizer' && <AddReconstructionForm/>}
         {content}
     </div>
 }

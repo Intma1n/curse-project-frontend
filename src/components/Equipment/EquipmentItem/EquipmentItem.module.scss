@@ -6,6 +6,9 @@
   margin: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 5px 5px 15px -5px #000000;
+  button{
+    margin: 0.5rem;
+  }
 
   .equipmentInfo {
     margin: 0.5rem;
@@ -18,5 +21,26 @@
       }
     }
 
+  }
+  form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    margin: 0.5rem;
+
+
+    input {
+      height: 1.5rem;
+      font-size: 0.8rem;
+      outline: none;
+      border: none;
+      border-bottom: solid 1px $page_background;
+      margin: .1rem;
+      background-color: $another_background;
+    }
+    label {
+      font-weight: bold;
+    }
   }
 }

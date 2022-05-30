@@ -4,6 +4,8 @@ import {Header} from "../../components/Header/Header";
 import useHttp from "../../components/hooks/use-http";
 import {getAllEquipment} from "../../components/lib/api";
 import {useEffect} from "react";
+import {AddReconstructionForm} from "../../components/AddReconstructionForm/AddReconstructionForm";
+import {AddEquipmentForm} from "../../components/AddEquipmentForm/AddEquipmentForm";
 
 export const EquipmentPage = () => {
 
@@ -30,6 +32,8 @@ export const EquipmentPage = () => {
     }
     return <div className={classes.equipmentPage}>
         <Header name='name'/>
+        {(localStorage.getItem('username') === 'organizer' || localStorage.getItem('username') === 'reenactor') &&
+            <AddEquipmentForm/>}
         {content}
     </div>
 }

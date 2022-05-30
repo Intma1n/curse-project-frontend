@@ -10,7 +10,7 @@ export const UsersList = (props:{users:UserType[]}) => {
                 name={user.name}
                 surname={user.surname}
                 email={user.email}
-                type={user.type}
+                type_of_user={user.type_of_user}
                 id={user.id}
                 password={user.password}
             />

@@ -47,9 +47,6 @@ export const AllUsersPage = () => {
 
     return <div className={classes.allUsersPage}>
         <Header name='name'/>
-        <form action="" onSubmit={submitHandler}>
-            <button type='submit'>TEST</button>
-        </form>
         {content}
     </div>
 }

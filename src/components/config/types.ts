@@ -13,7 +13,7 @@ export type UserType = {
     password: string,
     surname: string,
     email: string,
-    type: string,
+    type_of_user: string,
 }
 
 export type RegisterOnReconstructionType = {
